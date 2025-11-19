@@ -1,0 +1,135 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 50%; 
+  display: block;
+  margin: auto;
+}
+
+.largeimg {
+  width: 75%
+}
+
+.fatimg {
+  width: 100%;
+}
+
+div div {
+  border: 5px solid white;
+  background-color: #f5f5f7;
+}
+
+nav {
+  text-align: center;
+  background-color: black;
+  color: lightgray;
+  padding: 5px;
+  text-decoration: none;
+}
+
+a:link {
+  text-align: center;
+  color: lightgray;
+  padding: 5px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+a:visited {
+  color: gray;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.link>a:link {
+  color: #227dd1;
+  display: block;
+  margin: auto;
+}
+
+.link>a:visited {
+  color: blue;
+}
+
+nav, p, h1 {
+  font-family: Helvetica;
+}
+
+/* CSS grid here */
+
+#support {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-areas:
+  "title title title"
+  "mac iphone ipad"
+  "watch airpods tv"
+  "tradein tradein tradein"
+  "footer footer footer";
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas:
+  "titleabout titleabout"
+  "txtabout txtabout"
+  "titlesocial titlesocial"
+  "instagramsocial facebooksocial"
+  "youtubesocial twittersocial";
+}
+
+@media screen and (max-width: 800px) {
+
+#support {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+  "titles"
+  "iphone"
+  "mac"
+  "ipad"
+  "watch"
+  "airpods"
+  "tv"
+  "applecare"
+  "tradein"
+  "footer";
+}}
+
+@media screen and (max-width: 800px) {
+  
+#about {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+  "titleabout"
+  "txtabout"
+  "titlesocial"
+  "instagramsocial"
+  "facebooksocial"
+  "twittersocial"
+  "youtubesocial";
+}}
+
+/* got help from w3 under this comment */
+span {
+  color: red;
+}
